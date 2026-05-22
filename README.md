@@ -27,8 +27,8 @@ Get an API key at [aisa.one](https://aisa.one). Keep your key out of commits, sc
 Clone this repository:
 
 ```bash
-git clone https://github.com/AISA-skills/saas-automation.git
-cd saas-automation
+git clone https://github.com/AISA-skills/saas-automation-skills.git
+cd saas-automation-skills
 ```
 
 Install one or more skills into your local agent runtime. For Codex:
@@ -55,7 +55,7 @@ Each skill contains its own workflow, safety rules, required inputs, and API not
 ## Repository Layout
 
 ```text
-saas-automation/
+saas-automation-skills/
 |-- README.md
 |-- LICENSE
 |-- .gitignore
