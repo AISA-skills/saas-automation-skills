@@ -1,16 +1,12 @@
 # SaaS Automation Skills
 
-OAuth, Gmail, Notion, connected-account workflows, tool execution, triggers, webhooks, and MCP automation through the AIsa SaaS gateway.
+SaaS automation agent skills powered by AIsa.
 
 This repository is part of the [AISA Skills](https://github.com/AISA-skills) collection. Each top-level directory is a self-contained agent skill with a `SKILL.md` file and optional supporting scripts, references, or assets.
 
 ## Skills
 
-| Skill | Description |
-|---|---|
-| [gmail-lead-desk](./gmail-lead-desk/) | Gmail Lead Desk — standalone sales/CS Gmail skill via the AISA gateway: OAuth connect, scan unread leads, summarize threads, draft template replies (default draft-only), archive with labels. Keywords: Gmail Lead Desk, Gmail, lead desk, sales, customer... |
-| [notion-workspace](./notion-workspace/) | Manage Notion workspace: search pages and databases, read markdown, create pages, insert rows, triggers, MCP. Powered by AISA gateway (Notion toolkit). Requires AISA_API_KEY and curl. Keywords: notion, workspace, page, database, block, markdown, wiki, task... |
-| [saas-gateway](./saas-gateway/) | Unified SaaS integration gateway via api.aisa.one (AISA gateway, v3.1): manage OAuth auth for third-party SaaS apps (Gmail/Slack/GitHub/Notion etc.), tool execution, tool-router sessions, triggers, webhooks, MCP servers, and usage stats. Use when connecting... |
+No active skills are currently published in this repository.
 
 ## Requirements
 
@@ -31,13 +27,11 @@ git clone https://github.com/AISA-skills/saas-automation-skills.git
 cd saas-automation-skills
 ```
 
-Install one or more skills into your local agent runtime. For Codex:
+Install one or more skills into your local agent runtime after skills are added. For Codex:
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -r gmail-lead-desk ~/.codex/skills/
-cp -r notion-workspace ~/.codex/skills/
-cp -r saas-gateway ~/.codex/skills/
+# cp -r <skill-name> ~/.codex/skills/
 ```
 
 For other Agent Skills compatible runtimes, copy the skill folder into that runtime's skills directory, then restart the agent so it can load the skill metadata.
@@ -47,7 +41,7 @@ For other Agent Skills compatible runtimes, copy the skill folder into that runt
 Ask your agent to use the relevant skill by name. Example:
 
 ```text
-Use gmail-lead-desk to help me with this task.
+Use <skill-name> to help me with this task.
 ```
 
 Each skill contains its own workflow, safety rules, required inputs, and API notes in `SKILL.md`.
